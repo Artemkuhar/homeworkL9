@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+}
+section>div{
+width: 150px; 
+	height: 150px;	
+}
+section{
+	width: 80%;
+	height: 220px;
+	background-color: #ccc;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+section div:first-child{
+	background-color: green;
+	transition: all .5s;
+}
+section div:last-child{
+	background-color: red;
+	transition: all .5s;
+}
+section div:nth-child(2){
+	background-color: orange;
+	transition: all .5s;
+}
+section div:nth-child(3){
+	background-color: blue;
+	transition: all .5s;
+}
+main>section:first-child:hover div:first-child{
+	border:3px solid black;
+	transition: all .5s;
+}
+main>section:first-child:hover div:nth-child(3){
+	border:3px solid black;
+	transition: all .5s;
+}
+main>section:first-child:hover div:last-child{
+	background-color: black;
+	transition: all .5s;
+}
+main>section:first-child:hover div:nth-child(2){
+	background-color: black;
+	transition: all .5s;
+}
+main > section:first-child > div:first-child:hover + div:nth-child(2){
+	background-color: #fff;
+	transition: all .5s;
+}
+main > section:first-child > div:nth-child(2):hover ~ div{
+	background-color: #fff;
+	transition: all .5s;
+}
+
+main>section:nth-child(2){
+	position: relative;
+}
+main>section:nth-child(2)>div{
+	position: absolute;
+	float: right;
+}
+main>section:nth-child(2)>div:first-child{
+	top: 10%;
+	left: 3%;
+	transition: all .5s;
+}
+main>section:nth-child(2)>div:nth-child(2){
+	top: 10%;
+	left: 28%;
+	transition: all .5s;
+}
+main>section:nth-child(2)>div:nth-child(3){
+	top: 10%;
+	left: 53%;
+	transition: all .5s;
+}
+main>section:nth-child(2)>div:last-child{
+	top: 10%;
+	left: 78%;
+	transition: all .5s;
+}
+main>section:nth-child(2):hover div:first-child{
+	top: 10%;
+	left: 53%;
+	transition: all .5s;
+}
+main>section:nth-child(2):hover div:nth-child(3){
+	top: 10%;
+	left: 3%;
+	transition: all .5s;
+}
+main>section:nth-child(2):hover div:nth-child(2){
+	top: 10%;
+	left: 78%;
+	transition: all .5s;
+}
+main>section:nth-child(2):hover div:last-child{
+	top: 10%;
+	left: 28%;
+	transition: all .5s;
+}
+main>section:nth-child(2)>div:nth-child(3):hover + div:last-child{
+	top: 10%;
+	left: 53%;
+	transition: all .5s;
+}
+main>section:nth-child(2)>div:nth-child(3):hover  div:nth-child(1){
+	top: 10%;
+	left: 28%;
+	transition: all .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
